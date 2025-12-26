@@ -115,6 +115,10 @@ public class Main {
                     System.out.println("numero de contrasenias: " + suma);
                     break;
                 case 8:
+                    System.out.println("Listado");
+                    u.mostrarListado();
+                    break;
+                case 9:
                     System.out.println("saliendo del sistema...");
                     break;
                 default:
@@ -122,7 +126,7 @@ public class Main {
                     break;
             }
 
-        }while(opcion != 8);
+        }while(opcion != 9);
 
     }
     public static void menu(){
@@ -134,7 +138,8 @@ public class Main {
         System.out.println("5. Autenticar acceso");
         System.out.println("6. Reporte del umbral");
         System.out.println("7. Ver cantidad de registros");
-        System.out.println("8. Salir");
+        System.out.println("8. Ver lista de Empleados");
+        System.out.println("9. Salir");
         System.out.print("Elija una opcion: ");
     }
 }

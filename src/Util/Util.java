@@ -111,6 +111,18 @@ public class Util {
         }
     }
 
+    public void mostrarListado() {
+        if (empleados.isEmpty()) {
+            System.out.println("no hay empleados registrados...");
+        } else {
+            System.out.println("===Lista de empleados===");
+            for (Empleado e : empleados) {
+                System.out.println(e);
+                System.out.println("-----------------------------------");
+            }
+        }
+    }
+
     public int buscarEmpleado(String cedula){
         for (int i = 0; i < empleados.size(); i++){
             if (empleados.get(i).getCedula().equals(cedula)){
